@@ -9,7 +9,7 @@ app = Flask(__name__)
 def dashboard(name):
    return 'Bem vindo %s' % name
 
-@app.route('/login',methods = ['POST', 'GET'])
+@app.route('/login',methods = ['POST', 'GET']) # Recebendo a rota a partir do que foi posto em login.html
 def login():
    if request.method == 'POST':
       user = request.form['name']
